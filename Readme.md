@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Мария Орлова](https://up.htmlacademy.ru/adaptive/18/user/1039753).
-* Наставник: `Неизвестно`.
+* Наставник: `Артём Михайлов`.
 
 ---
 
