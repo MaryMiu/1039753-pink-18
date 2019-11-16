@@ -15,10 +15,10 @@
       <button class="main-nav__toggle">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="#">HTML academy</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--active" href="index.html">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
         </ul>
       </div>
     </nav>
@@ -26,17 +26,22 @@
   <main class="page-main">
     <h1 class="visually-hidden">Приложение «Пинк»</h1>
     <section class="app">
-      <h2 class="visually-hidden">Скачать приложение «Пинк»</h2>
-      <p class="app__title title title--white">Взгляните на жизнь иначе!</p>
-      <button class="app__button button">Скачать приложение</button>
-      <ul class="app__icons platform">
-        <li class="platform__item"><a class="platform__link platform__link--apple" href="#">Скачать на Apple</a></li>
-        <li class="platform__item"><a class="platform__link platform__link--android" href="#">Скачать на Android</a>
-        </li>
-        <li class="platform__item"><a class="platform__link platform__link--microsoft" href="#">Скачать на Microsoft</a>
-        </li>
-      </ul>
-      <small class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+      <div class="app__header">
+        <h2 class="visually-hidden">Скачать приложение «Пинк»</h2>
+        <p class="app__title title title--white">Взгляните на жизнь иначе!</p>
+      </div>
+      <div class="app__download">
+        <button class="app__button button button-reverse">Скачать приложение</button>
+        <ul class="app__icons platform">
+          <li class="platform__item"><a class="platform__link platform__link--apple" href="#">Скачать на Apple</a></li>
+          <li class="platform__item"><a class="platform__link platform__link--android" href="#">Скачать на Android</a>
+          </li>
+          <li class="platform__item"><a class="platform__link platform__link--microsoft" href="#">Скачать на
+              Microsoft</a>
+          </li>
+        </ul>
+        <small class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+      </div>
     </section>
     <section class="advantages">
       <h2>Преимущества</h2>
@@ -96,7 +101,7 @@
       <h2 class="visually-hidden">Цены</h2>
       <ul class="rate__list">
         <li class="rate__item rate__item--duty">
-          <header>
+          <header class="rate__header">
             <h3 class="visually-hidden">Возможности</h3>
           </header>
           <ol class="rate__table tariff">
@@ -106,8 +111,8 @@
           </ol>
         </li>
         <li class="rate__item">
-          <header>
-            <h3 class="rate__heading">База</h3>
+          <header class="rate__header">
+            <h3 class="rate__name">База</h3>
             <p class="rate__price">1,99 USD</p>
           </header>
           <ol class="rate__table tariff">
@@ -117,8 +122,8 @@
           </ol>
         </li>
         <li class="rate__item">
-          <header>
-            <h3 class="rate__heading">Стандарт</h3>
+          <header class="rate__header">
+            <h3 class="rate__name">Стандарт</h3>
             <p class="rate__price">3,99 USD</p>
           </header>
           <ol class="rate__table tariff">
@@ -128,8 +133,8 @@
           </ol>
         </li>
         <li class="rate__item">
-          <header>
-            <h3 class="rate__heading">Анлим</h3>
+          <header class="rate__header">
+            <h3 class="rate__name">Анлим</h3>
             <p class="rate__price">9,99 USD</p>
           </header>
           <ol class="rate__table tariff">
