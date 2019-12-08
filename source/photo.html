@@ -15,10 +15,11 @@
       <button class="main-nav__toggle">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--active" href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
+
         </ul>
       </div>
     </nav>
@@ -27,15 +28,15 @@
     <h1 class="page-header">Фотографии пользователей</h1>
     <p class="page-description">Взгляните на фотографии, которые выкладывают пользователи!
       Видите, как не хватает ваших?</p>
-    <div class="page-list">
-      <article class="page-list__item photo">
+    <ul class="page-list">
+      <li class="page-list__item photo">
         <div class="photo__sticker">Панорама дня</div>
         <a class="photo__link" href="#">
           <img class="photo__img photo__img--full" src="images/photo-001.jpg" width="320" height="137" alt="Фото">
         </a>
         <div class="photo___description">
           <header class="photo__header">
-            <cite class="photo__author">Анна</cite>
+            <b class="photo__author">Анна</b>
             <time datetime="2019-11-11T09:54" class="photo__time">(5 минут назад)</time>
           </header>
           <blockquote class="photo__name">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
@@ -43,14 +44,14 @@
             в перископе, задавайте свои вопросы!</blockquote>
           <button class="photo__button">Нравится: 215</button>
         </div>
-      </article>
-      <article class="page-list__item photo">
+      </li>
+      <li class="page-list__item photo">
         <a class="photo__link" href="#">
           <img class="photo__img" src="images/photo-001.jpg" width="280" height="180" alt="Фото">
         </a>
         <div class="photo___description">
           <header class="photo__header">
-            <cite class="photo__author">Анна</cite>
+            <b class="photo__author">Анна</b>
             <time datetime="2019-11-11T09:54" class="photo__time">(5 минут назад)</time>
           </header>
           <blockquote class="photo__name">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
@@ -58,14 +59,14 @@
             в перископе, задавайте свои вопросы!</blockquote>
           <button class="photo__button">Нравится: 215</button>
         </div>
-      </article>
-      <article class="page-list__item photo">
+      </li>
+      <li class="page-list__item photo">
         <a class="photo__link" href="#">
           <img class="photo__img" src="images/photo-001.jpg" width="280" height="180" alt="Фото">
         </a>
         <div class="photo___description">
           <header class="photo__header">
-            <cite class="photo__author">Анна</cite>
+            <b class="photo__author">Анна</b>
             <time datetime="2019-11-11T09:54" class="photo__time">(5 минут назад)</time>
           </header>
           <blockquote class="photo__name">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
@@ -73,14 +74,14 @@
             в перископе, задавайте свои вопросы!</blockquote>
           <button class="photo__button">Нравится: 215</button>
         </div>
-      </article>
-      <article class="page-list__item photo">
+      </li>
+      <li class="page-list__item photo">
         <a class="photo__link" href="#">
           <img class="photo__img" src="images/photo-001.jpg" width="280" height="180" alt="Фото">
         </a>
         <div class="photo___description">
           <header class="photo__header">
-            <cite class="photo__author">Анна</cite>
+            <b class="photo__author">Анна</b>
             <time datetime="2019-11-11T09:54" class="photo__time">(5 минут назад)</time>
           </header>
           <blockquote class="photo__name">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
@@ -88,14 +89,14 @@
             в перископе, задавайте свои вопросы!</blockquote>
           <button class="photo__button">Нравится: 215</button>
         </div>
-      </article>
-      <article class="page-list__item photo">
+      </li>
+      <li class="page-list__item photo">
         <a class="photo__link" href="#">
           <img class="photo__img" src="images/photo-001.jpg" width="280" height="180" alt="Фото">
         </a>
         <div class="photo___description">
           <header class="photo__header">
-            <cite class="photo__author">Анна</cite>
+            <b class="photo__author">Анна</b>
             <time datetime="2019-11-11T09:54" class="photo__time">(5 минут назад)</time>
           </header>
           <blockquote class="photo__name">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
@@ -103,14 +104,14 @@
             в перископе, задавайте свои вопросы!</blockquote>
           <button class="photo__button">Нравится: 215</button>
         </div>
-      </article>
-      <article class="page-list__item photo">
+      </li>
+      <li class="page-list__item photo">
         <a class="photo__link" href="#">
           <img class="photo__img" src="images/photo-001.jpg" width="280" height="180" alt="Фото">
         </a>
         <div class="photo___description">
           <header class="photo__header">
-            <cite class="photo__author">Анна</cite>
+            <b class="photo__author">Анна</b>
             <time datetime="2019-11-11T09:54" class="photo__time">(5 минут назад)</time>
           </header>
           <blockquote class="photo__name">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
@@ -118,8 +119,8 @@
             в перископе, задавайте свои вопросы!</blockquote>
           <button class="photo__button">Нравится: 215</button>
         </div>
-      </article>
-    </div>
+      </li>
+    </ul>
     <p class="page-description">Затмите их всех!
       Выкладывайте все, что накопилось в телефоне!</p>
     <section class="upload">
@@ -166,7 +167,7 @@
     </ul>
     <p class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </p>
   </footer>
 </body>
