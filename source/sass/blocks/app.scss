@@ -1,0 +1,44 @@
+.app {
+  background-color: #172131;
+  text-align: center;
+}
+
+.app__header {
+  padding: 18px 30px 288px;
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.app__title {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.app__description {
+  font-weight: 300;
+  line-height: 1.71;
+  color: #ffffff;
+  font-size: 14px;
+  opacity: .7;
+}
+
+.app__icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.app__download {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+}
+
+.app__button {
+  margin-bottom: 33px;
+}
