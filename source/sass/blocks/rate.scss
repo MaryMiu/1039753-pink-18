@@ -1,0 +1,6 @@
+.rate {
+  background-color: $light-grey;
+}
+.rate__list {
+  @include list;
+}
