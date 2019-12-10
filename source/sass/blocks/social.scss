@@ -1,0 +1,24 @@
+.social {
+  @include list;
+  display: flex;
+}
+
+.social__item {
+  margin-right: 17px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  width: 46px;
+  height: 46px;
+  border: solid 1px $dark;
+  background-color: #fefefe;
+  border: 3px solid #EAECED;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

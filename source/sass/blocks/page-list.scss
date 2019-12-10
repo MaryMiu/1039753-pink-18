@@ -1,0 +1,19 @@
+.page-list {
+  @include list;
+}
+
+.page-list__item {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+
+  &--full {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .photo___description {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}
