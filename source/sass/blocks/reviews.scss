@@ -1,3 +1,7 @@
+.reviews__wrapper {
+  padding: 42px 0;
+}
+
 .reviews__list {
   @include list;
 }
@@ -8,11 +12,12 @@
   color: #000000;
   line-height: 1.67;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
 }
 
 .reviews__text {
   margin: 0;
+  line-height: 30px;
 }
 
 .reviews__item {
