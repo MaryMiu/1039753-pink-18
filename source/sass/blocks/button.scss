@@ -3,10 +3,20 @@
   font-weight: 700;
   line-height: 1;
   text-align: center;
-  color: #ffffff;
+  color: $lipstick;
   background-color: transparent;
-  border: 3px solid #ffffff;
+  border: 3px solid $lipstick;
   border-radius: 30px;
   padding: 16px 30px;
   width: 100%;
+
+  &--reverse {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  &--disabled {
+    color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
 }
