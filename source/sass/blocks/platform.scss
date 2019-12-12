@@ -1,0 +1,33 @@
+.platform {
+  @include list;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+.platform__link {
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.platform__link--apple {
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/logo-apple.svg");
+}
+
+.platform__link--android {
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/logo-android.svg");
+}
+
+.platform__link--microsoft {
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/logo-microsoft.svg");
+}

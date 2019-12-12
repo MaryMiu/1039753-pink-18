@@ -1,0 +1,57 @@
+.photo {
+  position: relative;
+}
+
+.photo__sticker {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: $lipstick;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: block;
+  padding: 12px 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.photo___description {
+  padding: 25px 17px 16px;
+  background-color: $light-grey;
+}
+
+.photo__author {
+  font-weight: bold;
+}
+
+.photo__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo__name {
+  margin: 0 0 5px;
+}
+
+.photo__button {
+  color: $lipstick;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 0 10px 33px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 13px;
+    height: 12px;
+    display: block;
+    background-image: url("../img/icon-heart.svg");
+    position: absolute;
+    top: 11px;
+    left: 0;
+  }
+}

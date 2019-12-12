@@ -1,0 +1,21 @@
+.reviews__list {
+  @include list;
+}
+
+.reviews__author {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 1.67;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.reviews__text {
+  margin: 0;
+}
+
+.reviews__item {
+  text-align: center;
+  padding: 0 20px;
+}
