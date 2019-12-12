@@ -3,7 +3,7 @@
 }
 
 .upload__photo {
-  padding: 20px;
+  padding: 20px 20px 34px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -16,6 +16,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 37px;
 }
 
 .upload__icon {
@@ -32,6 +34,11 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+.upload__range {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .upload__buttons {

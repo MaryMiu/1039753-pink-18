@@ -1,0 +1,60 @@
+.form__group {
+  @include clearfix;
+  border: none;
+  padding: 33px 20px 21px;
+  margin-left: 0;
+  margin-right: 0;
+
+  &--even {
+    background-color: $light-grey;
+  }
+}
+
+.form__name {
+  font-size: 14px;
+  color: $lipstick;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin-bottom: 19px;
+  line-height: 21px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form__input {
+  margin-bottom: 20px;
+  float: left;
+  width: 100%;
+
+  &--checkbox {
+    margin-bottom: 27px;
+    margin-top: 25px;
+  }
+
+  &--radio {
+    margin-bottom: 23px;
+    margin-top: 23px;
+  }
+}
+
+.form__footer {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.form__addition {
+  text-transform: uppercase;
+}
+
+.form__star {
+  color: $lipstick;
+}
+
+.form__button {
+  margin-bottom: 28px;
+}
