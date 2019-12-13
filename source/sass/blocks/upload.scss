@@ -1,0 +1,54 @@
+.upload {
+  background-color: $light-grey;
+}
+
+.upload__photo {
+  padding: 20px 20px 34px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.upload__image {
+  margin-bottom: 40px;
+}
+
+.upload__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 37px;
+}
+
+.upload__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.upload__range {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.upload__buttons {
+  padding: 38px 20px;
+}
+
+.upload__button {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

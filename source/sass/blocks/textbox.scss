@@ -1,0 +1,30 @@
+.textbox {
+  margin-top: 0;
+}
+
+.textbox__label {
+  font-size: 14px;
+  color: $lipstick;
+  text-transform: uppercase;
+  display: block;
+  padding-left: 21px;
+  margin-bottom: 8px;
+}
+
+.textbox__input {
+  height: 63px;
+}
+
+.textbox__input,
+.textbox__textarea {
+  padding: 15px 20px;
+  border: solid 2px #e5e5e5;
+  width: 100%;
+  font-size: 18px;
+  color: inherit;
+  line-height: 1.67;
+}
+
+.textbox__textarea {
+  min-height: 200px;
+}

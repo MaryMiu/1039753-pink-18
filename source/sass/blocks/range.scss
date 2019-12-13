@@ -1,0 +1,19 @@
+.range__scale {
+  position: relative;
+  height: 2px;
+  background-color: $dark;
+}
+
+.range__button {
+  position: absolute;
+  top: -6px;
+  left: 81%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: solid 2px $lipstick;
+  background-color: $light-grey;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
