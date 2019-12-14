@@ -42,3 +42,13 @@
 .app__button {
   margin-bottom: 33px;
 }
+
+@media (min-width: $tablet-width) {
+  .app__header {
+    padding-bottom: 30px;
+    background: none;
+  }
+  .app__title {
+    margin-bottom: 0;
+  }
+}
