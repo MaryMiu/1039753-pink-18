@@ -1,5 +1,8 @@
-.range__scale {
+.range {
   position: relative;
+}
+
+.range__scale {
   height: 2px;
   background-color: $dark;
 }
@@ -16,4 +19,8 @@
   display: block;
   padding: 0;
   margin: 0;
+
+  &:active {
+    background-color: $lipstick;
+  }
 }

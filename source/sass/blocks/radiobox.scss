@@ -20,9 +20,21 @@
     background-color: #ffffff;
     border-radius: 50%;
   }
+
+  &:hover {
+    &::before {
+      border-color: $dark;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $lipstick;
+    }
+  }
 }
 
-.radiobox__input:checked + .radiobox__label {
+.radiobox__input:checked+.radiobox__label {
   &::after {
     content: "";
     width: 15px;

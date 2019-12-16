@@ -22,4 +22,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    border-color: $dark;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }

@@ -19,9 +19,21 @@
     border: solid 2px #e5e5e5;
     background-color: #ffffff;
   }
+
+  &:hover {
+    &::before {
+      border-color: $dark;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $lipstick;
+    }
+  }
 }
 
-.checkbox__input:checked + .checkbox__label {
+.checkbox__input:checked+.checkbox__label {
   &::after {
     content: "";
     width: 22px;

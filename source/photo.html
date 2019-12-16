@@ -32,23 +32,27 @@
   </header>
   <main class="page-main">
     <h1 class="page-title">Фотографии пользователей</h1>
-    <p class="page-description">Взгляните на фотографии, которые выкладывают пользователи!
-      Видите, как не хватает ваших?</p>
+    <div class="container">
+      <p class="page-description">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</p>
+    </div>
     <ul class="page-list">
       <li class="page-list__item page-list__item--full photo">
         <div class="photo__sticker">Панорама дня</div>
         <a class="photo__link" href="#">
           <img class="photo__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото">
         </a>
-        <div class="photo___description">
-          <header class="photo__header">
-            <b class="photo__author">Анна</b>
-            <time datetime="2019-11-11T09:54" class="photo__time">(5 минут назад)</time>
-          </header>
-          <blockquote class="photo__name">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
-            трансляцию
-            в перископе, задавайте свои вопросы!</blockquote>
-          <button class="photo__button">Нравится: 215</button>
+        <div class="container">
+          <div class="photo___description">
+            <header class="photo__header">
+              <b class="photo__author">Анна</b>
+              <time datetime="2019-11-11T09:54" class="photo__time">(5 минут назад)</time>
+            </header>
+            <blockquote class="photo__name">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+              трансляцию
+              в перископе, задавайте свои вопросы!</blockquote>
+            <button class="photo__button">Нравится: 215</button>
+          </div>
         </div>
       </li>
       <li class="page-list__item photo">
@@ -165,14 +169,13 @@
         </p>
         <div class="upload__range range">
           <div class="range__scale">
-            <div class="range__bar"></div>
           </div>
           <button class="range__button"></button>
         </div>
       </div>
       <div class="upload__buttons">
-        <button class="upload__button button">Запостить</button>
-        <button class="upload__button button button--disabled">Отмена</button>
+        <button class="upload__button button button--default">Запостить</button>
+        <button class="upload__button button button--muted">Отмена</button>
       </div>
     </section>
   </main>
