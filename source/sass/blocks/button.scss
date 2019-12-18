@@ -9,6 +9,8 @@
   border-radius: 30px;
   padding: 16px 30px;
   width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
   &--default {
     color: $lipstick;
@@ -70,7 +72,7 @@
     }
 
     &:active {
-      color: #7EBF9A;
+      color: #7ebf9a;
       border-color: #1c9b5e;
       background-color: #1c9b5e;
     }

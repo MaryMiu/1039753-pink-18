@@ -8,6 +8,7 @@
   line-height: 1.67;
   padding-top: 4px;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -19,6 +20,7 @@
     border: solid 2px #e5e5e5;
     background-color: #ffffff;
     border-radius: 50%;
+    transition: all 0.3s ease;
   }
 
   &:hover {
@@ -34,7 +36,7 @@
   }
 }
 
-.radiobox__input:checked+.radiobox__label {
+.radiobox__input:checked + .radiobox__label {
   &::after {
     content: "";
     width: 15px;
