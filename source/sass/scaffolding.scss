@@ -70,7 +70,20 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-// .container {
-//   width: 320px;
-//   margin: 0 auto;
-// }
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 980px;
+  }
+}

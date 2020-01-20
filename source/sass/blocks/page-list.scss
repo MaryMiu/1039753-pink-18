@@ -3,17 +3,23 @@
 }
 
 .page-list__item {
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 20px;
+}
 
-  &--full {
-    padding-left: 0;
-    padding-right: 0;
-
-    .photo___description {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+@media (min-width: $tablet-width) {
+  .page-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
   }
+  .page-list__item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }

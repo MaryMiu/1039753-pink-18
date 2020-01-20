@@ -43,6 +43,7 @@
   text-transform: uppercase;
   padding: 10px 0 10px 33px;
   position: relative;
+  margin-top: auto;
 
   &::before {
     content: "";
@@ -54,4 +55,11 @@
     top: 11px;
     left: 0;
   }
+}
+
+.photo___description {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
