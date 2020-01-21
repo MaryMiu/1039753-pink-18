@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 41px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .page-footer__title {
@@ -38,13 +39,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .container {
-    width: 660px;
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .page-footer__logo {
+    margin-bottom: 0;
+  }
+  .page-footer__social {
+    margin-bottom: 0;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .container {
-    width: 980px;
-  }
-}

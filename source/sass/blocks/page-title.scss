@@ -1,18 +1,44 @@
-.page-title {
+.page-title__inner {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 200px;
-  font-size: 24px;
-  font-weight: 300;
   background-color: #172131;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
+}
+
+.page-title__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.page-title__title {
+  font-size: 24px;
+  font-weight: 300;
   line-height: normal;
   margin: 0;
   color: #ffffff;
-  padding: 0 30px;
   text-align: center;
+}
+
+.page-title__description {
+  text-align: center;
+  padding: 49px 18px;
+  margin: 0;
+  line-height: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title__container {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title__container {
+    width: 980px;
+  }
 }
