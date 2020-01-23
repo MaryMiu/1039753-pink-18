@@ -18,7 +18,7 @@
 .textbox__input,
 .textbox__textarea {
   padding: 15px 20px;
-  border: solid 2px #e5e5e5;
+  border: solid 2px $grey;
   width: 100%;
   font-size: 18px;
   color: inherit;
@@ -36,4 +36,28 @@
 
 .textbox__textarea {
   min-height: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .textbox {
+    &--stroke {
+      display: flex;
+      align-items: center;
+
+      .textbox__label {
+        padding-left: 0;
+        margin-right: 15px;
+      }
+    }
+
+    &--inverse {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .textbox__label {
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
