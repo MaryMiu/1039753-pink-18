@@ -8,6 +8,7 @@
   line-height: 1.67;
   padding-top: 4px;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -18,6 +19,19 @@
     height: 35px;
     border: solid 2px #e5e5e5;
     background-color: #ffffff;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    &::before {
+      border-color: $dark;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $lipstick;
+    }
   }
 }
 

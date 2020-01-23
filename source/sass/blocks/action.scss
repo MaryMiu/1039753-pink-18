@@ -17,4 +17,14 @@
   color: $lipstick;
   text-align: center;
   line-height: 30px;
+
+  &:hover {
+    color: $dark;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
 }

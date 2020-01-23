@@ -23,6 +23,15 @@
   font-size: 18px;
   color: inherit;
   line-height: 1.67;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: $dark;
+  }
+
+  &:active {
+    border-color: $lipstick;
+  }
 }
 
 .textbox__textarea {

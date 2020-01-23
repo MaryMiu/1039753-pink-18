@@ -1,0 +1,107 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: block;
+    padding: 56px 0;
+  }
+
+  .effect__container {
+    margin: 0 auto;
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: "24";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 96px;
+      font-weight: bold;
+      color: $lipstick;
+      width: 300px;
+      height: 300px;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      padding-top: 30px;
+      position: relative;
+      left: -20px
+    }
+
+    &::after {
+      content: "";
+      width: 202px;
+      height: 202px;
+      background-image: url("../img/icon-editor-diagram-fill.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      position: absolute;
+      top: 70px;
+      left: 30px;
+    }
+  }
+
+  .effect__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .effect__text {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .effect__inner {
+    width: 310px;
+  }
+
+  .effect__link {
+    color: $lipstick;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    background-color: $light-grey;
+  }
+
+  .effect__container {
+    width: 940px;
+
+    &::before {
+      width: 345px;
+      height: 345px;
+      font-size: 120px;
+    }
+
+    &::after {
+      width: 253px;
+      height: 253px;
+    }
+
+    .effect__inner {
+      width: 570px;
+    }
+
+    .effect__text {
+      font-size: 18px;
+    }
+
+    .effect__link {
+      font-size: 18px;
+    }
+  }
+}
