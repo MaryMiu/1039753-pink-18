@@ -1,0 +1,46 @@
+.slider__list {
+  margin-bottom: 35px;
+}
+
+.slider__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__toggle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 3px solid#ffffff;
+  background-color: $dark;
+  text-indent: -9999px;
+  padding: 0;
+  margin-right: 13px;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--active {
+    border-color: $dark;
+    background-color: #ffffff;
+    opacity: 1;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

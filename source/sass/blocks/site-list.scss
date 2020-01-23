@@ -1,0 +1,15 @@
+.site-list {
+  @include list;
+}
+
+.site-list__link {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 19px 0;
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000;
+}

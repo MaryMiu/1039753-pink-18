@@ -1,0 +1,85 @@
+.button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  background-color: transparent;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 30px;
+  padding: 16px 30px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &--default {
+    color: $lipstick;
+    border-color: $lipstick;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $lipstick;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $lipstick;
+    }
+  }
+
+  &--primary {
+    color: #ffffff;
+    border-color: #ffffff;
+
+    &:hover {
+      color: $lipstick;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: rgba($lipstick, 0.3);
+      background-color: #ffffff;
+    }
+  }
+
+  &--muted {
+    color: rgba($dark, 0.1);
+    border-color: rgba($dark, 0.1);
+
+    &:hover {
+      color: rgba($dark, 0.3);
+      border-color: rgba($dark, 0.3);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: rgba($dark, 0.3);
+    }
+  }
+
+  &--form {
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 3px;
+    border: solid 2px #2aab6d;
+    background-color: #2aab6d;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    &:hover {
+      border-color: #1c9b5e;
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: #7ebf9a;
+      border-color: #1c9b5e;
+      background-color: #1c9b5e;
+    }
+
+    &:disabled {
+      border-color: $grey;
+      background-color: $grey;
+    }
+  }
+}

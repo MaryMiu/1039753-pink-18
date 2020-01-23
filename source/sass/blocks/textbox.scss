@@ -1,0 +1,63 @@
+.textbox {
+  margin-top: 0;
+}
+
+.textbox__label {
+  font-size: 14px;
+  color: $lipstick;
+  text-transform: uppercase;
+  display: block;
+  padding-left: 21px;
+  margin-bottom: 8px;
+}
+
+.textbox__input {
+  height: 63px;
+}
+
+.textbox__input,
+.textbox__textarea {
+  padding: 15px 20px;
+  border: solid 2px $grey;
+  width: 100%;
+  font-size: 18px;
+  color: inherit;
+  line-height: 1.67;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: $dark;
+  }
+
+  &:active {
+    border-color: $lipstick;
+  }
+}
+
+.textbox__textarea {
+  min-height: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .textbox {
+    &--stroke {
+      display: flex;
+      align-items: center;
+
+      .textbox__label {
+        padding-left: 0;
+        margin-right: 15px;
+      }
+    }
+
+    &--inverse {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .textbox__label {
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

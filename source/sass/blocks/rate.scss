@@ -1,0 +1,161 @@
+.rate {
+  background-color: $light-grey;
+  padding-top: 90px;
+  padding-bottom: 45px;
+}
+
+.rate__scroll {
+  overflow-x: auto;
+}
+
+.rate__list {
+  @include list;
+}
+
+.rate__table {
+  width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  margin-bottom: 35px;
+}
+
+.rate__cell {
+  font-size: 18px;
+  font-weight: normal;
+  border: solid 2px $grey;
+  padding: 22px 24px;
+  background-color: #ffffff;
+  width: 280px;
+
+  &--head {
+    text-align: center;
+    background-color: $dark;
+
+    &:first-child {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  &--first {
+    display: none;
+  }
+}
+
+.rate__name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.rate__price {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rate__icon {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    width: 31px;
+    height: 31px;
+    display: block;
+  }
+
+  &--yes {
+    &::after {
+      background-image: url("../img/icon-yes.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 31px auto;
+    }
+  }
+
+  &--no {
+    &::after {
+      background-image: url("../img/icon-no.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 27px auto;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .rate__table {
+    width: 620px;
+  }
+
+  .rate__cell {
+    width: 155px;
+    padding: 7px 14px;
+
+    &--first {
+      display: table-cell;
+      font-size: 14px;
+    }
+
+    &--head {
+      padding: 11px 14px;
+    }
+  }
+
+  .rate__name {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .rate__price {
+    font-size: 18px;
+  }
+
+  .rate__icon {
+    text-indent: -9999px;
+    display: block;
+    margin: 0 auto;
+    height: 31px;
+    width: 31px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rate__table {
+    width: 940px;
+  }
+
+  .rate__cell {
+    width: 235px;
+    padding: 22px 24px;
+
+    &--first {
+      font-size: 18px;
+    }
+  }
+
+  .rate__name {
+    font-size: 18px;
+  }
+
+  .rate__price {
+    font-size: 24px;
+  }
+}

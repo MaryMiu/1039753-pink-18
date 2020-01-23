@@ -1,0 +1,21 @@
+.card-list__inner {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .card-list__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 660px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .card-list__inner {
+    width: 980px;
+  }
+}

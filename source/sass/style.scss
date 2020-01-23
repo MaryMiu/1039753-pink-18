@@ -1,4 +1,30 @@
-body {
-    margin: 0;
-    padding: 0;
-}
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+@import "blocks/action.scss";
+@import "blocks/advantages.scss";
+@import "blocks/app.scss";
+@import "blocks/button.scss";
+@import "blocks/card-list.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/copyright.scss";
+@import "blocks/effect.scss";
+@import "blocks/form.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/map.scss";
+@import "blocks/page-description.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-title.scss";
+@import "blocks/card.scss";
+@import "blocks/platform.scss";
+@import "blocks/radiobox.scss";
+@import "blocks/range.scss";
+@import "blocks/rate.scss";
+@import "blocks/reviews.scss";
+@import "blocks/site-list.scss";
+@import "blocks/slider.scss";
+@import "blocks/social.scss";
+@import "blocks/upload.scss";
+@import "blocks/textbox.scss";
