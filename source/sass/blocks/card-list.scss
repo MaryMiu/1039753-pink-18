@@ -5,6 +5,18 @@
   padding-right: 20px;
 }
 
+.card-list__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.card-list__description {
+  text-align: center;
+  padding: 49px 18px;
+  margin: 0;
+  line-height: 29px;
+}
+
 @media (min-width: $tablet-width) {
   .card-list__inner {
     display: flex;
@@ -13,9 +25,25 @@
     align-items: stretch;
     width: 660px;
   }
+
+  .card-list__container {
+    width: 590px;
+  }
+
+  .card-list__description {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 94px;
+    padding-bottom: 74px;
+  }
 }
+
 @media (min-width: $desktop-width) {
   .card-list__inner {
     width: 980px;
+  }
+
+  .card-list__container {
+    width: 615px;
   }
 }

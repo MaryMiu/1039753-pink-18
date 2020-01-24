@@ -10,60 +10,69 @@
 
 <body>
   <header class="page-header">
-    <div class="container">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-          alt="Логотип Пинк">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link site-list__link--active" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML
-                academy</a></li>
-          </ul>
+    <div class="page-header__outer">
+      <div class="page-header__container page-header__container--active">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="#">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+              alt="Логотип Пинк">
+          </a>
+          <button class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></button>
         </div>
-      </nav>
-    </div>
-  </header>
-  <main class="page-main">
-    <h1 class="visually-hidden">Приложение «Пинк»</h1>
-    <section class="app">
-      <div class="container">
-        <div class="app__header">
-          <h2 class="visually-hidden">Скачать приложение «Пинк»</h2>
-          <p class="app__title title title--white">Взгляните на жизнь иначе!</p>
-        </div>
-        <div class="app__download">
-          <button class="app__button button button--primary">Скачать приложение</button>
-          <div class="app__icons">
-            <ul class="platform">
-              <li class="platform__item"><a class="platform__link platform__link--apple" href="#">Скачать на Apple</a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a class="site-list__link site-list__link--active"
+                  href="index.html">Главная</a>
               </li>
-              <li class="platform__item"><a class="platform__link platform__link--android" href="#">Скачать на
-                  Android</a>
-              </li>
-              <li class="platform__item"><a class="platform__link platform__link--microsoft" href="#">Скачать на
-                  Microsoft</a>
-              </li>
+              <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+              <li class="site-list__item"><a class="site-list__link"
+                  href="https://htmlacademy.ru/intensive/adaptive">HTML
+                  academy</a></li>
             </ul>
           </div>
-          <small class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+        </nav>
+      </div>
+    </div>
+    <section class="app">
+      <div class="app__container">
+        <div class="app__outer">
+          <div class="app__header">
+            <h1 class="visually-hidden">Приложение «Пинк»</h1>
+            <p class="app__title">Взгляните на жизнь иначе!</p>
+          </div>
+          <div class="app__download">
+            <div class="app__inner">
+              <button class="app__button button button--primary">Скачать приложение</button>
+              <div class="app__icons">
+                <ul class="platform">
+                  <li class="platform__item"><a class="platform__link platform__link--apple" href="#">Скачать на Apple</a>
+                  </li>
+                  <li class="platform__item"><a class="platform__link platform__link--android" href="#">Скачать на
+                      Android</a>
+                  </li>
+                  <li class="platform__item"><a class="platform__link platform__link--microsoft" href="#">Скачать на
+                      Microsoft</a>
+                  </li>
+                </ul>
+              </div>
+              <small class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+  </header>
+  <main class="page-main">
     <section class="advantages">
-      <div class="container">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <div class="advantages__header">
-          <p class="advantages__title title title--black">Устали от серости мегаполиса?</p>
-          <p class="advantages__title title title--black">Нам есть, что вам предложить!</p>
-        </div>
-        <div class="advantages__inner">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <div class="advantages__header">
+        <p class="advantages__title title title--black">Устали от серости мегаполиса?</p>
+        <p class="advantages__title title title--black">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="advantages__inner">
+        <div class="advantages__container">
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__heading">Поднимает настроение</h3>
@@ -78,7 +87,8 @@
             </li>
             <li class="advantages__item">
               <h3 class="advantages__heading">Заводит новых друзей</h3>
-              <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+                новых
               </p>
             </li>
           </ul>
@@ -88,7 +98,7 @@
     <section class="effect">
       <div class="effect__container">
         <div class="effect__inner">
-          <h2 class="effect__title">Эффект на 24 часа!</h2>
+          <h2 class="effect__title">Эффект на&nbsp;24&nbsp;часа!</h2>
           <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от
             использования приложения
             длится целые сутки!</p>
@@ -97,9 +107,9 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="container">
-        <div class="reviews__wrapper slider">
-          <h2 class="visually-hidden">Отзывы</h2>
+      <div class="reviews__container slider">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="slider__inner">
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item slider__item--active">
               <div class="reviews__inner">
@@ -143,6 +153,10 @@
             <button class="slider__toggle">2</button>
             <button class="slider__toggle">3</button>
           </div>
+          <div class="slider__arrows reviews__arrows">
+            <button class="slider__arrow slider__arrow--prev">Предыдущий</button>
+            <button class="slider__arrow slider__arrow--next">Следующий</button>
+          </div>
         </div>
       </div>
     </section>
@@ -159,6 +173,7 @@
                   <p class="rate__price">1,99 USD</p>
                 </th>
                 <th class="rate__cell rate__cell--head" scope="col">
+                  <span class="rate__hit">Хит</span>
                   <h3 class="rate__name">Стандарт</h3>
                   <p class="rate__price">3,99 USD</p>
                 </th>
@@ -200,7 +215,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__container">
-      <p class="page-footer__title">Остались вопросы?<br>Свяжитесь с нами!</p>
+      <p class="page-footer__title">Остались вопросы? Свяжитесь с нами!</p>
       <ul class="page-footer__list">
         <li class="page-footer__item action">
           <b class="action__title">Звоните:</b>
@@ -253,8 +268,9 @@
         </li>
       </ul>
       <p class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+            Academy</span></a>
       </p>
     </div>
   </footer>

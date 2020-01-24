@@ -46,11 +46,24 @@
 }
 
 .advantages__inner {
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% auto;
   background-color: $light-grey;
+
+
+
+}
+
+.advantages__container {
   display: flex;
   flex-direction: column-reverse;
   position: relative;
   align-items: center;
+  padding-top: 55px;
+  width: 280px;
+  margin: 0 auto;
 
   &::before {
     content: "";
@@ -60,16 +73,30 @@
     background-repeat: no-repeat;
     background-position: center bottom -43px;
   }
+
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__title {
-    font-size: 40px;
+  .advantages__header {
+    padding-top: 47px;
   }
 
-  .advantages__inner {
+  .advantages__title {
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 0;
+
+    &:last-child {
+      width: 450px;
+      margin: 0 auto;
+    }
+  }
+
+  .advantages__container {
+    width: 620px;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 28px;
 
     &::before {
       width: 268px;
@@ -77,11 +104,13 @@
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-position: 0 0;
       align-self: flex-end;
+      margin-top: -38px;
     }
   }
 
   .advantages__list {
     width: 310px;
+    margin-top: -18px;
   }
 
   .advantages__item {
@@ -90,11 +119,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages__title {
-    font-size: 40px;
+  .advantages__header {
+    padding-top: 67px;
   }
 
-  .advantages__inner {
+  .advantages__title {
+    font-size: 50px;
+    line-height: 59px;
+
+    &:last-child {
+      width: 560px;
+    }
+  }
+
+  .advantages__container {
+    width: 940px;
+
     &::before {
       display: none;
     }
@@ -111,7 +151,9 @@
     margin-bottom: 0;
     text-align: center;
     width: 300px;
-    padding-top: 341px;
+    padding-top: 365px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     &:nth-child(1) {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
