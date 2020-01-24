@@ -1,4 +1,8 @@
 .rate {
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% auto;
   background-color: $light-grey;
   padding-top: 90px;
   padding-bottom: 45px;
@@ -6,6 +10,7 @@
 
 .rate__scroll {
   overflow-x: auto;
+  margin-bottom: 38px;
 }
 
 .rate__list {
@@ -17,20 +22,21 @@
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
-  margin-bottom: 35px;
 }
 
 .rate__cell {
   font-size: 18px;
   font-weight: normal;
   border: solid 2px $grey;
-  padding: 22px 24px;
+  padding: 14px 21px;
   background-color: #ffffff;
   width: 280px;
+  position: relative;
 
   &--head {
     text-align: center;
     background-color: $dark;
+    padding: 17px 24px 23px;
 
     &:first-child {
       background-color: transparent;
@@ -49,7 +55,7 @@
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 }
 
 .rate__price {
@@ -93,7 +99,44 @@
   }
 }
 
+.rate__hit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 74px;
+  height: 73px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -9px;
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 74px;
+    height: 73px;
+  }
+
+  &::after {
+    content: "хит";
+    position: absolute;
+    font-size: 14px;
+    color: #ffffff;
+    transform: rotate(-45deg);
+    width: 100%;
+    text-align: center;
+    top: 7px;
+    left: -18px;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .rate {
+    padding-top: 70px;
+  }
+
   .rate__table {
     width: 620px;
   }
@@ -135,19 +178,35 @@
       margin-left: -15px;
     }
   }
+
+  .rate__toggles {
+    display: none;
+  }
+
+  .rate__scroll {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .rate {
+    padding-top: 138px;
+    padding-bottom: 90px;
+  }
+
   .rate__table {
     width: 940px;
   }
 
   .rate__cell {
     width: 235px;
-    padding: 22px 24px;
+    padding: 14px 24px;
 
     &--first {
       font-size: 18px;
+    }
+    &--head {
+      padding: 22px 24px;
     }
   }
 

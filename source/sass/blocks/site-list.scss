@@ -4,12 +4,28 @@
 
 .site-list__link {
   font-size: 18px;
-  font-weight: bold;
-  text-align: center;
   color: #ffffff;
-  text-transform: uppercase;
   padding: 19px 0;
   display: block;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  border-bottom: 1px solid #000000;
+}
+
+@media (max-width: $desktop-width-only) {
+  .site-list__link {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+  }
 }
