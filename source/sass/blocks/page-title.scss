@@ -1,13 +1,6 @@
-.page-title__inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 200px;
-  background-color: #172131;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: cover;
+.page-title {
+  padding-top: 28px;
+  padding-bottom: 78px;
 }
 
 .page-title__container {
@@ -17,8 +10,8 @@
 
 .page-title__title {
   font-size: 24px;
+  line-height: 31px;
   font-weight: 300;
-  line-height: normal;
   margin: 0;
   color: #ffffff;
   text-align: center;
@@ -32,13 +25,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-title__container {
-    width: 660px;
+  .page-title {
+    padding-top: 70px;
+    padding-bottom: 141px;
   }
+
+  .page-title__container {
+    width: 600px;
+  }
+
+  .page-title__title {
+    font-size: 50px;
+    line-height: 59px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
-  .page-title__container {
-    width: 980px;
+  .page-title {
+    padding-bottom: 98px;
   }
 }

@@ -1,5 +1,4 @@
 .app {
-  background-color: #172131;
   text-align: center;
 }
 
@@ -42,10 +41,6 @@
 @media (max-width: $mobile-width-only) {
   .app__header {
     position: relative;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     padding-top: 20px;
 
     &::after {
@@ -60,18 +55,16 @@
   }
 
   .app__download {
+    background-color: #172131;
+  }
+
+  .app__inner {
     width: 280px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .app {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
 
   .app__container {
     display: flex;
@@ -84,7 +77,7 @@
     align-items: center;
   }
 
-  .app__inner {
+  .app__outer {
     width: 300px;
     padding: 30px 0 45px;
   }
@@ -119,11 +112,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .app {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    padding-top: 107px;
-  }
-
   .app__container {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: right -126px bottom;

@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 40px;
+  // padding-top: 40px; Лишний оступ на внутренних
 }
 
 .page-footer__inner {
@@ -70,7 +70,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 67px;
+    // padding-top: 67px; Тот же отступ
   }
 
   .page-footer__inner {

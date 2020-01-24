@@ -10,42 +10,43 @@
 
 <body>
   <header class="page-header">
-    <div class="container">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-          alt="Логотип Пинк">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
-            <li class="site-list__item"><a class="site-list__link site-list__link--active"
-                href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML
-                academy</a></li>
-          </ul>
+    <div class="page-header__outer">
+      <div class="page-header__container page-header__container--active">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="#">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+              alt="Логотип Пинк">
+          </a>
+          <button class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></button>
         </div>
-      </nav>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item"><a class="site-list__link site-list__link--active"
+                  href="photo.html">Фотографии</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+              <li class="site-list__item"><a class="site-list__link"
+                  href="https://htmlacademy.ru/intensive/adaptive">HTML
+                  academy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="page-header__title page-title">
+      <div class="page-title__container">
+        <h1 class="page-title__title">Фотографии пользователей</h1>
+      </div>
     </div>
   </header>
   <main class="page-main">
-
-    <header class="page-title">
-      <div class="page-title__inner">
-        <div class="page-title__container">
-          <h1 class="page-title__title">Фотографии пользователей</h1>
-        </div>
-      </div>
-      <div class="page-title__container">
-        <p class="page-title__description">Взгляните на фотографии, которые выкладывают пользователи!
+    <section class="card-list">
+      <div class="card-list__container">
+        <p class="card-list__description">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?</p>
       </div>
-    </header>
-
-    <section class="card-list">
-
       <article class="card card--full">
         <div class="card__sticker">Панорама дня</div>
         <a class="card__link" href="#">
@@ -56,9 +57,10 @@
             <b class="card__author">Анна</b>
             <time datetime="2019-11-11T09:54" class="card__time">(5 минут назад)</time>
           </header>
-          <blockquote class="card__name">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
-            трансляцию
-            в перископе, задавайте свои вопросы!</blockquote>
+          <blockquote class="card__name">Прыгать или нет? Напишите в&nbsp;комментарии свой совет и&nbsp;смотрите прямую
+            трансляцию в&nbsp;перископе,
+            <!-- задавайте свои вопросы! -->
+          </blockquote>
           <button class="card__button">Нравится: 215</button>
         </div>
       </article>
@@ -149,50 +151,67 @@
       <div class="upload__container">
         <h2 class="visually-hidden">Опубликовать фото</h2>
         <p class="upload__description">Затмите их всех!<br>
-          Выкладывайте все, что накопилось в телефоне!</p>
+          Выкладывайте все, что накопилось&nbsp;в телефоне!</p>
       </div>
-
-      <div class="upload__inner">
-
-        <div class="upload__card">
-          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Моё фото">
-        </div>
-        <div class="upload__controls">
-          <p class="upload__icons">
-            <button class="upload__icon upload__button--crop">
-              <span class="visually-hidden">Обрезать</span>
-              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="44" height="44">
-                <path fill="none" d="M0 0h48v48H0V0z" />
-                <path d="M34 30h4V14a4 4 0 00-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20a4 4 0 004 4h20v8h4v-8h8v-4H14z" />
-              </svg>
-            </button>
-            <button class="upload__icon upload__button--fill">
-              <span class="visually-hidden">Залить</span>
-              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-                <path fill="none" d="M0 0h48v48H0V0z" />
-                <path
-                  d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7a4 4 0 108 0c0-2.67-4-7-4-7zM0 40h48v3H0z" />
-              </svg>
-            </button>
-            <button class="upload__icon upload__button--contrast">
-              <span class="visually-hidden">Изменить
-                контраст</span>
-              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                viewBox="-35.42 -7.96 31.92 31.92">
-                <path fill="#231F20"
-                  d="M-19.46-3.96C-12.86-3.96-7.5 1.41-7.5 8s-5.37 11.96-11.96 11.96S-31.42 14.59-31.42 8s5.36-11.96 11.96-11.96m0-4a15.96 15.96 0 100 31.92 15.96 15.96 0 000-31.92z" />
-                <path d="M-19.46 16.33a8.52 8.52 0 100-17.04" />
-              </svg>
-            </button>
-          </p>
-          <div class="upload__range range">
-            <div class="range__scale">
-            </div>
-            <button class="range__button"></button>
+      <div class="upload__outer">
+        <div class="upload__inner">
+          <div class="upload__card">
+            <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Моё фото">
           </div>
-          <div class="upload__buttons">
-            <button class="upload__button button button--default">Запостить</button>
-            <button class="upload__button button button--muted">Отмена</button>
+          <div class="upload__controls">
+            <div class="upload__options">
+              <div class="upload__bar upload__bar--active">
+                <button class="upload__icon upload__button--crop">
+                  <span class="visually-hidden">Обрезать</span>
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="44" height="44">
+                    <path fill="none" d="M0 0h48v48H0V0z" />
+                    <path
+                      d="M34 30h4V14a4 4 0 00-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20a4 4 0 004 4h20v8h4v-8h8v-4H14z" />
+                  </svg>
+                </button>
+                <div class="upload__range range">
+                  <div class="range__scale">
+                  </div>
+                  <button class="range__button"></button>
+                </div>
+              </div>
+              <div class="upload__bar">
+                <button class="upload__icon upload__button--fill">
+                  <span class="visually-hidden">Залить</span>
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                    <path fill="none" d="M0 0h48v48H0V0z" />
+                    <path
+                      d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7a4 4 0 108 0c0-2.67-4-7-4-7zM0 40h48v3H0z" />
+                  </svg>
+                </button>
+                <div class="upload__range range">
+                  <div class="range__scale">
+                  </div>
+                  <button class="range__button"></button>
+                </div>
+              </div>
+              <div class="upload__bar">
+                <button class="upload__icon upload__button--contrast">
+                  <span class="visually-hidden">Изменить
+                    контраст</span>
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="-35.42 -7.96 31.92 31.92">
+                    <path fill="#231F20"
+                      d="M-19.46-3.96C-12.86-3.96-7.5 1.41-7.5 8s-5.37 11.96-11.96 11.96S-31.42 14.59-31.42 8s5.36-11.96 11.96-11.96m0-4a15.96 15.96 0 100 31.92 15.96 15.96 0 000-31.92z" />
+                    <path d="M-19.46 16.33a8.52 8.52 0 100-17.04" />
+                  </svg>
+                </button>
+                <div class="upload__range range">
+                  <div class="range__scale">
+                  </div>
+                  <button class="range__button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="upload__buttons">
+              <button class="upload__button button button--default">Запостить</button>
+              <button class="upload__button button button--muted">Отмена</button>
+            </div>
           </div>
         </div>
       </div>
@@ -234,8 +253,9 @@
         </li>
       </ul>
       <p class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+            Academy</span></a>
       </p>
     </div>
   </footer>
