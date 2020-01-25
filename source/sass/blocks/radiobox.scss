@@ -49,6 +49,10 @@
   }
 }
 
+.radiobox__input:focus + .radiobox__label {
+  @include outline;
+}
+
 @media (min-width: $tablet-width) {
   .radiobox {
     padding-left: 60px;

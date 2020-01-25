@@ -11,3 +11,7 @@
     clear: both;
   }
 }
+
+@mixin outline {
+  outline: 1px dotted #212121;
+}

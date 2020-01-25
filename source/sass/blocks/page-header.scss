@@ -6,29 +6,6 @@
   background-color: #172131;
 }
 
-.page-header__toggle {
-  position: relative;
-  width: 50px;
-  height: 24px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-
-  &::before {
-    content: "";
-    width: 50px;
-    height: 24px;
-    display: block;
-    background-image: url("../img/icon-menu-burger.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
 .page-header__logo {
   color: #ffffff;
   display: block;
@@ -94,8 +71,46 @@
 }
 
 @media (max-width: $tablet-width-only) {
+  .page-header__nav {
+    display: none;
+  }
+
+  .page-header__toggle {
+    position: relative;
+    width: 50px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    &::before {
+      content: "";
+      width: 50px;
+      height: 24px;
+      display: block;
+      background-image: url("../img/icon-menu-burger.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   .page-header__container--active {
     background-color: #172131;
+
+    .page-header__nav {
+      display: block;
+    }
+
+    .page-header__toggle {
+      &::before {
+        background-image: url("../img/icon-menu-cross.svg");
+        background-position: center right;
+      }
+    }
   }
 
   .page-header__top {
