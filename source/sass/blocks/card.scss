@@ -63,9 +63,12 @@
   background-color: transparent;
   font-size: 12px;
   text-transform: uppercase;
-  padding: 10px 0 10px 33px;
+  padding: 10px 0 10px;
   position: relative;
   margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 122px;
 
   &::before {
     content: "";
@@ -73,9 +76,6 @@
     height: 12px;
     display: block;
     background-image: url("../img/icon-heart.svg");
-    position: absolute;
-    top: 11px;
-    left: 0;
   }
 }
 
@@ -89,39 +89,72 @@
     display: flex;
     flex-direction: column;
     flex-grow: 0;
+    margin-bottom: 24px;
 
     &--full {
       max-width: 660px;
       width: 100%;
+      margin-bottom: 51px;
 
       .card__button {
         position: absolute;
-        top: 17px;
+        top: 21px;
         right: 25px;
+        width: 122px;
       }
     }
 
-    .card__sticker {
-      top: 55px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card--full {
-    max-width: 1200px;
-    width: 100%;
-
-    .card__description {
-      max-width: 940px;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
+    &:last-child {
+      margin-bottom: 19px;
     }
   }
 
   .card__sticker {
-    top: 94px;
+    top: 58px;
+  }
+
+  .card__description {
+    padding: 25px 28px 16px;
+  }
+
+  .card__button {
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .card__name {
+    min-height: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    margin-bottom: 59px;
+
+    &:last-child {
+      margin-bottom: 59px;
+    }
+
+    &--full {
+      max-width: 1200px;
+      width: 100%;
+      margin-bottom: 27px;
+
+      .card__description {
+        max-width: 940px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  .card__sticker {
+    top: 53px;
     right: 131px;
+  }
+
+  .card-list__description {
+    padding-bottom: 88px;
   }
 }
