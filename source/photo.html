@@ -14,8 +14,12 @@
       <div class="page-header__container page-header__container--active">
         <div class="page-header__top">
           <a class="page-header__logo" href="#">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-              alt="Логотип Пинк">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
+                alt="Пинк">
+            </picture>
           </a>
           <button class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></button>
         </div>
@@ -50,7 +54,12 @@
       <article class="card card--full">
         <div class="card__sticker">Панорама дня</div>
         <a class="card__link" href="#">
-          <img class="card__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="card__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg"
+              alt="Панорама дня">
+          </picture>
         </a>
         <div class="card__description">
           <header class="card__header">
@@ -68,7 +77,13 @@
       <div class="card-list__inner">
         <article class="card">
           <a class="card__link" href="#">
-            <img class="card__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-car-mobile@1x.jpg" alt="Фото">
+            </picture>
           </a>
           <div class="card__description">
             <header class="card__header">
@@ -81,7 +96,13 @@
         </article>
         <article class="card">
           <a class="card__link" href="#">
-            <img class="card__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-drumset-mobile@1x.jpg" alt="Фото">
+            </picture>
           </a>
           <div class="card__description">
             <header class="card__header">
@@ -94,7 +115,13 @@
         </article>
         <article class="card">
           <a class="card__link" href="#">
-            <img class="card__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-window-mobile@1x.jpg" alt="Фото">
+            </picture>
           </a>
           <div class="card__description">
             <header class="card__header">
@@ -107,7 +134,13 @@
         </article>
         <article class="card">
           <a class="card__link" href="#">
-            <img class="card__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-fair-mobile@1x.jpg" alt="Фото">
+            </picture>
           </a>
           <div class="card__description">
             <header class="card__header">
@@ -120,7 +153,13 @@
         </article>
         <article class="card">
           <a class="card__link" href="#">
-            <img class="card__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-pov-mobile@1x.jpg" alt="Фото">
+            </picture>
           </a>
           <div class="card__description">
             <header class="card__header">
@@ -133,7 +172,13 @@
         </article>
         <article class="card">
           <a class="card__link" href="#">
-            <img class="card__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="card__img" src="img/photo-wing-mobile@1x.jpg" alt="Фото">
+            </picture>
           </a>
           <div class="card__description">
             <header class="card__header">
@@ -156,7 +201,13 @@
       <div class="upload__outer">
         <div class="upload__inner">
           <div class="upload__card">
-            <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Моё фото">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Моё фото">
+            </picture>
           </div>
           <div class="upload__controls">
             <div class="upload__options">
@@ -220,8 +271,11 @@
   <footer class="page-footer">
     <div class="page-footer__inner">
       <a href="index.html" class="page-footer__logo">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
-          alt="Логотип Пинк">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40"
+            alt="Логотип Пинк">
+        </picture>
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">

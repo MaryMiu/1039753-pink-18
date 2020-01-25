@@ -12,6 +12,7 @@
       margin-right: 20px;
     }
   }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -78,6 +79,10 @@
   }
 }
 
+.card__img {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .card {
     width: 300px;
@@ -86,7 +91,8 @@
     flex-grow: 0;
 
     &--full {
-      width: 660px;
+      max-width: 660px;
+      width: 100%;
 
       .card__button {
         position: absolute;
@@ -103,10 +109,12 @@
 
 @media (min-width: $desktop-width) {
   .card--full {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
 
     .card__description {
-      width: 940px;
+      max-width: 940px;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
     }

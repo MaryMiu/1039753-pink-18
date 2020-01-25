@@ -29,19 +29,37 @@
   }
 }
 
+@media (min-resolution: $retina-dppx) {
+  .page-header {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
+
+  .page-header__logo-image {
+    width: 140px;
+    position: relative;
+    top: -5px;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .page-header {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width-only) {
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
   .page-header__top {
     min-height: 110px;
   }
 }
 
-@media (max-width: $desktop-width-only) {
+@media (max-width: $tablet-width-only) {
   .page-header__container--active {
     background-color: #172131;
   }
@@ -75,5 +93,11 @@
     justify-content: space-between;
     align-items: center;
     min-height: 107px;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .page-header {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
