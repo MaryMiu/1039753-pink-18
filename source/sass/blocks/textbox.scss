@@ -19,6 +19,7 @@
 .textbox__textarea {
   padding: 15px 20px;
   border: solid 2px $grey;
+  border-radius: 3px;
   width: 100%;
   font-size: 18px;
   color: inherit;
@@ -59,5 +60,42 @@
         margin-bottom: 0;
       }
     }
+  }
+
+  .textbox__input-wrapper {
+    position: relative;
+    padding-right: 62px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 62px;
+      height: 100%;
+      border: 0;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+
+    &--phone {
+      &::after {
+        background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
+        background-size: 20px 19px;
+      }
+    }
+
+    &--email {
+      &::after {
+        background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
+        background-size: 18px 13px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textbox__textarea {
+    min-height: 123px;
   }
 }

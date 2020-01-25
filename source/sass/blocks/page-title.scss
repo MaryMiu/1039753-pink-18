@@ -1,6 +1,6 @@
 .page-title {
-  padding-top: 28px;
-  padding-bottom: 78px;
+  padding: 28px 0;
+  min-height: 170px;
 }
 
 .page-title__container {
@@ -26,12 +26,20 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
-    padding-top: 70px;
-    padding-bottom: 141px;
-  }
+    padding: 70px 0;
+    min-height: 328px;
 
-  .page-title__container {
-    width: 600px;
+    &--photo {
+      .page-title__container {
+        width: 600px;
+      }
+    }
+
+    &--form {
+      .page-title__container {
+        width: 600px;
+      }
+    }
   }
 
   .page-title__title {
@@ -43,6 +51,12 @@
 
 @media (min-width: $desktop-width) {
   .page-title {
-    padding-bottom: 98px;
+    min-height: 286px;
+
+    &--form {
+      .page-title__container {
+        width: 940px;
+      }
+    }
   }
 }

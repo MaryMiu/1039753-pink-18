@@ -1,7 +1,3 @@
-.page-footer {
-  // padding-top: 40px; Лишний оступ на внутренних
-}
-
 .page-footer__inner {
   width: 280px;
   margin: 0 auto;
@@ -49,6 +45,7 @@
 .page-footer__container {
   width: 280px;
   margin: 0 auto;
+  padding-top: 40px;
 }
 
 .page-footer__map {
@@ -69,10 +66,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
-    // padding-top: 67px; Тот же отступ
-  }
-
   .page-footer__inner {
     width: 620px;
     margin-right: auto;
@@ -114,6 +107,7 @@
   }
 
   .page-footer__container {
+    padding-top: 67px;
     width: 620px;
   }
 
@@ -138,18 +132,22 @@
       height: 100px;
     }
   }
+
   .page-footer__title {
     font-size: 50px;
     line-height: 59px;
     margin-bottom: 62px;
   }
+
   .page-footer__item {
     &:nth-child(1) {
       order: 0;
     }
+
     &:nth-child(2) {
       order: 2;
     }
+
     &:nth-child(3) {
       order: 1;
     }
