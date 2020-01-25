@@ -1,0 +1,25 @@
+.show-from {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .show-from {
+    &--tablet {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-from {
+    &--desktop {
+      display: inline;
+    }
+  }
+}
