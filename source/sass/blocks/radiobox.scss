@@ -36,7 +36,7 @@
   }
 }
 
-.radiobox__input:checked+.radiobox__label {
+.radiobox__input:checked + .radiobox__label {
   &::after {
     content: "";
     width: 15px;
@@ -60,7 +60,7 @@
     }
   }
 
-  .radiobox__input:checked+.radiobox__label {
+  .radiobox__input:checked + .radiobox__label {
     &::after {
       left: -49px;
     }

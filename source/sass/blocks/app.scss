@@ -44,7 +44,7 @@
     padding-top: 20px;
 
     &::after {
-      content: '';
+      content: "";
       width: 258px;
       height: 286px;
       background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -74,7 +74,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .app__container {
     display: flex;
     margin: 0 auto;

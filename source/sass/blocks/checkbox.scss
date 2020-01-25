@@ -35,7 +35,7 @@
   }
 }
 
-.checkbox__input:checked+.checkbox__label {
+.checkbox__input:checked + .checkbox__label {
   &::after {
     content: "";
     width: 22px;
@@ -61,7 +61,7 @@
     }
   }
 
-  .checkbox__input:checked+.checkbox__label {
+  .checkbox__input:checked + .checkbox__label {
     &::after {
       left: -47px;
     }

@@ -129,6 +129,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 55px;
   }
 
   .form__button {
@@ -154,6 +156,7 @@
   .form__wrapper {
     padding-left: 39px;
     padding-right: 39px;
+
     @include clearfix;
 
     .form__input {
@@ -167,8 +170,8 @@
     }
 
     &--text {
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 0;
+      padding-right: 0;
 
       .form__input {
         margin-bottom: 54px;
@@ -203,11 +206,6 @@
       margin-top: 20px;
     }
   }
-
-  .form__footer {
-    margin-top: 12px;
-    margin-bottom: 55px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -238,6 +236,8 @@
 
   .form__footer {
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 38px;
   }
 
   .form__text-hidden {
@@ -248,6 +248,7 @@
     &::after {
       display: none;
     }
+
     &--text-inverse {
       display: flex;
       flex-wrap: wrap;
@@ -304,10 +305,5 @@
   .form__container {
     width: 820px;
     padding-bottom: 68px;
-  }
-
-  .form__footer {
-    margin-top: 20px;
-    margin-bottom: 38px;
   }
 }
