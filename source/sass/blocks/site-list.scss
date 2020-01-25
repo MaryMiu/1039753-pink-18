@@ -7,6 +7,17 @@
   color: #ffffff;
   padding: 19px 0;
   display: block;
+
+  &:not(&--active) {
+    &:hover {
+      color: $lipstick;
+    }
+
+    &:active {
+      color: #ffffff;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (max-width: $tablet-width-only) {
@@ -27,5 +38,21 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 620px;
+  }
+
+  .site-list__link {
+    position: relative;
+
+    &--active {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 8px;
+        left: 0;
+        height: 2px;
+        background-color: #fff;
+      }
+    }
   }
 }

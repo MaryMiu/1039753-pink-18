@@ -10,17 +10,23 @@
 }
 
 .copyright__link {
-  position: relative;
+  color: $lipstick;
 
-  &::before {
-    content: "";
-    width: 27px;
-    height: 34px;
-    background-image: url("../img/logo-htmlacademy.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    display: block;
+  &:hover {
+    color: $dark;
   }
+
+  &:active {
+    color: $dark;
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  width: 27px;
+  height: 34px;
+  display: block;
+  fill: currentColor;
 }
 
 @media (min-width: $desktop-width) {

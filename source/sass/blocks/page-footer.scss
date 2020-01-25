@@ -36,6 +36,29 @@
 
 .page-footer__logo {
   margin-bottom: 43px;
+  color: $dark;
+
+  &:hover {
+    color: $lipstick;
+  }
+
+  &:active {
+    color: $dark;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__image {
+  fill: currentColor;
+  display: block;
+
+  &--mobile {
+    display: block;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .page-footer__social {
@@ -81,6 +104,8 @@
 
   .page-footer__logo {
     margin-bottom: 0;
+    position: relative;
+    top: -10px;
   }
 
   .page-footer__social {
@@ -115,6 +140,7 @@
   .page-footer__map {
     &::after {
       height: 70px;
+      background-size: 100% 70px;
     }
   }
 }
@@ -122,6 +148,11 @@
 @media (min-width: $desktop-width) {
   .page-footer__inner {
     width: 940px;
+    min-height: 197px;
+  }
+
+  .page-footer__list {
+    margin-bottom: 0;
   }
 
   .page-footer__container {
@@ -131,6 +162,7 @@
   .page-footer__map {
     &::after {
       height: 100px;
+      background-size: 100% 100px;
     }
   }
 
@@ -151,6 +183,16 @@
 
     &:nth-child(3) {
       order: 1;
+    }
+  }
+
+  .page-footer__image {
+    &--desktop {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
     }
   }
 }
