@@ -50,6 +50,10 @@
   }
 }
 
+.checkbox__input:focus + .checkbox__label {
+  @include outline;
+}
+
 @media (min-width: $tablet-width) {
   .checkbox {
     padding-left: 54px;
